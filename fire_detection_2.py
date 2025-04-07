@@ -10,8 +10,10 @@ Original file is located at
 from google.colab import drive
 drive.mount('/content/drive')
 
-!unzip /content/drive/MyDrive/archive.zip
+import zipfile
 
+with zipfile.ZipFile('/content/drive/MyDrive/archive.zip', 'r') as zip_ref:
+    zip_ref.extractall('/content/drive/MyDrive/')
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -84,7 +86,7 @@ print(f'Test Accuracy: {acc*100:.2f}%')
 
 model.save('forest_fire_detector.h5')
 
-!pip install streamlit
+
 import streamlit as st
 
 #Load your trained model
