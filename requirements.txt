@@ -1,0 +1,10 @@
+streamlit
+scikit-learn
+vaderSentiment
+pandas
+nltk
+numpy
+matplotlib
+seaborn
+kagglehub
+tensorflow
