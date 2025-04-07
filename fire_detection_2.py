@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/11k0yEgmVG6XcsimH7KOsxN5QC6of3POY
 """
 
-from google.colab import drive
+
 drive.mount('/content/drive')
 
 import zipfile
